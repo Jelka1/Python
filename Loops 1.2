@@ -1,0 +1,12 @@
+Write a function called draw_square that takes in num as a parameter and returns a string that consists of a square made of “*” with the dimensions num times num. 
+Note: ignore values that are less than or equal to zero. For example, draw_square(4) would return "****\n****\n****\n****".
+
+def draw_square(num):
+    string = ""
+    for i in range(num):
+        if i < (num - 1):
+            string += "*" * num + "\n"
+        else:
+            string += "*" * num
+    return string
+draw_square(4)
