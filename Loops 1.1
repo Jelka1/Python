@@ -1,0 +1,12 @@
+Write a function called sentence_without_vowels that takes in string as a parameter and returns a new string that consists of only characters that are not vowels. 
+For example, sentence_without_vowels('apple') would return "ppl".
+
+def sentence_without_vowels(string):
+    str = ""
+    for item in string:
+        if item in "aeiou": continue
+        str += item
+    return str
+  
+sentence_without_vowels('apple')
+sentence_without_vowels('soup')
