@@ -1,0 +1,12 @@
+Write a function called list_starts_with_a that takes in lst as a parameter and returns a new list with the words from lst that start with “a”. 
+For example, list_starts_with_a(["alphabet", "apple", "banana", "coding", "amazing"]) would return ["alphabet", "apple", "amazing"].
+
+def list_starts_with_a(lst):
+    ls = []
+    for item in lst:
+        if item.startswith("a"):
+            ls.append(item)
+    return ls
+            
+print(list_starts_with_a(["alphabet", "apple", "banana", "coding", "amazing"]))
+
