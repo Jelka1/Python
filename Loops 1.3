@@ -1,0 +1,13 @@
+Write a function called check_prime_num that takes in num as a parameter and returns True if num is a prime number and False otherwise. 
+For the purposes of this question, there is no need to test for values of num that are less than two. For example, check_prime_num(5) should return True.
+
+def check_prime_num(num):
+  if num <= 1:
+   return False
+  else: 
+   for n in range(2,num):
+    if num%n == 0:
+     return False
+  return True
+
+check_prime_num(4)
